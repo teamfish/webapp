@@ -1,0 +1,19 @@
+<h1>Report incident</h1>
+<p>Click on the map at approximately the location where the incident happened.</p>
+<div>
+	<leaflet center="center" event-broadcast="events" markers="incidentMarker" width="100%" height="400"></leaflet>
+	Lon: <input ng-model="incidentMarker[0].lng"/>
+	Lat: <input ng-model="incidentMarker[0].lat"/>
+</div>
+
+<div class="block">Fish type
+	<input ng-model="fishType" class="fishtype"/></div>
+<div class="block">
+	Describe incident
+	<textarea ng-model="description" class="description"></textarea>
+</div>
+<div class="block">
+	<input type="file" accept="image/*" image="image" resize-max-height="300" resize-max-width="250" resize-quality="0.7" />
+	Resized <img ng-show="image" ng-src="{{image.resized.url}}"/>
+</div>
+<button ng-click="submitReport" class="submit">Submit report</button>

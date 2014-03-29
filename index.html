@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en" ng-app="App">
+<head>
+	<meta charset="utf-8">
+	<title>Team Fish</title>
+	<link rel="stylesheet" href="app/style.css"/>
+	<link rel="stylesheet" href="bower_components/leaflet-dist/leaflet.css"/>
+</head>
+<body class="container" ng-controller="mainCtrl">
+	<nav class="main-nav">
+		<ul class="menu">
+			<li ng-class="getClass('/overview')"><a href="#/">Aquaculture farms</a></li>
+			<li ng-class="getClass('/report')"><a href="#/report">Report incident</a></li>
+		</ul>
+	</nav>
+
+	<div class="wrapper" ng-view></div>
+
+	<script src="bower_components/leaflet-dist/leaflet.js"></script>
+	<script src="bower_components/angular/angular.min.js"></script>
+	<script src="bower_components/angular-route/angular-route.js"></script>
+	<script src="bower_components/angular-leaflet/dist/angular-leaflet-directive.js"></script>
+	<script src="bower_components/angular-imageupload-directive/public/javascripts/imageupload.js"></script>
+	
+	<script src="bower_components/underscore/underscore.js"></script>
+
+	<script src="app/controller.js"></script>
+
+	<script src="app/components/directives.js"></script>
+	<script src="app/components/factories.js"></script>
+	<script src="app/components/filters.js"></script>
+	<script src="app/components/providers.js"></script>
+	<script src="app/components/resources.js"></script>
+	<script src="app/components/services.js"></script>
+</body>
+</html>
