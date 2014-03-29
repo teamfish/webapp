@@ -1,4 +1,3 @@
-webapp
-======
+# webapp
 
-Angular.js webapp for Team Fish
+Webapp for the aquaculture hackathon project
