@@ -1,6 +1,9 @@
 {
     "link":[
         "vendor/managed/angular/angular.min.js",
-        "vendor/managed/angular-bootstrap/ui-bootstrap-tpls.min.js"
+        "vendor/managed/angular-bootstrap/ui-bootstrap-tpls.min.js",
+        "vendor/managed/angular-leaflet/angular-leaflet-directive.js",
+        "vendor/managed/angular-route/angular-route.js",
+        "vendor/managed/leaflet/leaflet.js"
     ]
 }
